@@ -1,0 +1,184 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="styleLoadingLayout">@style/LoadingLayoutStyle</item>
+    </style>
+
+    <style name="LoadingLayoutStyle" parent="LoadingLayout.Style">
+        <item name="llEmptyImage">@drawable/ic_empty</item>
+        <item name="llErrorImage">@drawable/ic_error</item>
+    </style>
+
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Large">
+        <item name="minWidth">76dip</item>
+        <item name="maxWidth">76dip</item>
+        <item name="minHeight">76dip</item>
+        <item name="maxHeight">76dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView.Small">
+        <item name="minWidth">24dip</item>
+        <item name="maxWidth">24dip</item>
+        <item name="minHeight">24dip</item>
+        <item name="maxHeight">24dip</item>
+        <item name="indicatorName">BallPulseIndicator</item>
+    </style>
+
+    <!-- 加载中进度 -->
+    <style name="loading_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <!--      <item name="android:windowIsFloating">true</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 设置屏幕变暗 -->
+    </style>
+
+    <!-- 自定义AlertDialog -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--公用水平分割线-->
+    <style name="horizontal_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5px</item>
+        <item name="android:background">@color/main_tab_driver</item>
+    </style>
+
+    <!--公用垂直分割线-->
+    <style name="vertical_line_view">
+        <item name="android:layout_width">0.5px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/main_tab_driver</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 公用按钮Button 保存-->
+    <style name="submit_comm_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/comm_button_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/common_dimen_20dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimen_20dp</item>
+        <item name="android:layout_marginTop">@dimen/common_dimen_20dp</item>
+        <item name="android:layout_marginBottom">@dimen/common_dimen_20dp</item>
+    </style>
+
+
+    <!--公用垂直分割线-->
+    <style name="vertical_line_view_blue">
+        <item name="android:layout_width">10px</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:background">@color/blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="linear_shape_fillet">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_dimen_40dp</item>
+        <item name="android:background">@drawable/shape_fillet</item>
+        <item name="android:padding">@dimen/common_dimen_10dp</item>
+        <item name="android:layout_marginRight">@dimen/common_dimen_10dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimen_10dp</item>
+    </style>
+
+    <style name="common_edit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColorHint">@color/text_light_grey</item>
+        <item name="android:textSize">@dimen/text_size_15sp</item>
+        <item name="android:textColor">@color/main_tab_text_normal</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="submit_ui">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/submit_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/common_dimen_50dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimen_50dp</item>
+        <item name="android:layout_marginTop">@dimen/common_dimen_30dp</item>
+    </style>
+
+    <style name="submit_ui_query">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/submit_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/common_dimen_30dp</item>
+        <item name="android:layout_marginLeft">@dimen/common_dimen_30dp</item>
+        <item name="android:layout_marginTop">@dimen/common_dimen_30dp</item>
+    </style>
+
+    <style name="submit_ui_sou">
+        <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/submit_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="CallDetailActionItemStyle">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:drawablePadding">@dimen/common_dimen_28dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingStart">@dimen/common_dimen_28dp</item>
+        <item name="android:paddingEnd">@dimen/common_dimen_28dp</item>
+        <item name="android:paddingTop">@dimen/common_dimen_16dp</item>
+        <item name="android:paddingBottom">@dimen/common_dimen_16dp</item>
+        <item name="android:textColor">@color/call_detail_footer_text_color</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">#1565C0</item>
+        <item name="fab_colorPressed">#2272CD</item>
+        <item name="fab_colorRipple">#62B2FF</item>
+    </style>
+
+
+    <style name="MenuButtonsSmall.Green">
+        <item name="fab_colorNormal">#1565C0</item>
+        <item name="fab_colorPressed">#2272CD</item>
+        <item name="fab_colorRipple">#1565C0</item>
+    </style>
+
+</resources>

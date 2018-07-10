@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/tabLayoutCall"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                tl:tl_divider_color="#1A000000"
+                tl:tl_divider_padding="13dp"
+                tl:tl_divider_width="1dp"
+                tl:tl_indicator_color="@color/blue"
+                tl:tl_indicator_height="2dp"
+                tl:tl_indicator_width_equal_title="true"
+                tl:tl_tab_padding="22dp"
+                tl:tl_tab_space_equal="true"
+                tl:tl_textSelectColor="@color/blue"
+                tl:tl_textUnselectColor="@color/transparent40"
+                tl:tl_underline_color="#DDDDDD"
+                tl:tl_indicator_margin_left="@dimen/common_dimen_3dp"
+                tl:tl_indicator_margin_right="@dimen/common_dimen_3dp"
+                tl:tl_textBold="BOTH"
+                tl:tl_textsize="16sp"
+                tl:tl_underline_height="1dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPageCall"
+                android:layout_marginTop="@dimen/common_dimen_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/floating_action_button_container"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/fab_blue"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="center_horizontal|bottom">
+
+
+            <ImageButton
+                android:id="@+id/floating_action_button"
+                android:background="@drawable/floating_action_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fab_ic_dial"/>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

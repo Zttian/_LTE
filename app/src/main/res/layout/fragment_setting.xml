@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/rl_Fwqsz"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_call_detail_setting"
+            android:layout_width="22dip"
+            android:layout_height="22dip" />
+
+        <TextView
+            android:text="服务器设置"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_dimen_5dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/rl_Zdjtsz"
+        android:padding="@dimen/common_dimen_15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_vm_sound_on_dk"
+            android:layout_width="22dip"
+            android:layout_height="22dip" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_dimen_5dp"
+            android:text="自动接听"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+</LinearLayout>

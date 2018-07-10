@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tky.lte.widget.CTitleBar
+        android:id="@+id/cTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="机车码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_shape_fillet">
+            <TextView
+                android:id="@+id/tv_Jcm"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="请输入3位数字"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+            <ImageView
+                android:src="@drawable/arrow_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="机车号："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_Jch"
+                android:inputType="number"
+                android:hint="请输入5 位数字"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="功能码："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_shape_fillet">
+            <TextView
+                android:id="@+id/tv_gnm"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="请输入2位数字"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+
+            <ImageView
+                android:src="@drawable/arrow_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/horizontal_line_style" />
+
+    <Button
+        android:id="@+id/btCalling"
+        style="@style/submit_ui"
+        android:text="呼叫" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">朔黄LTE语音调度系统</string>
+
+    <string name="exit_msg">再按一次推出程序</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_interaction">互动</string>
+    <string name="tab_msg">通告</string>
+    <string name="tab_my">我的</string>
+    <string name="tv_info_entry">信息录入</string>
+    <string name="tv_poor_ledger">贫困台账</string>
+    <string name="tv_poor_map">贫困地图</string>
+    <string name="tv_statistical_analysis">统计分析</string>
+    <string name="tv_visit_regularly">定期走访</string>
+    <string name="tv_position_acquisition">位置采集</string>
+    <string name="send_code">发送验证码</string>
+    <string name="login">登陆</string>
+
+    <string name="line">line.txt</string>
+    <string name="station">station.txt</string>
+    <string name="Lines">Lines.ini</string>
+    <string name="Phones">Phones.ini</string>
+    <string name="testgpsinfo">testgpsinfo.txt</string>
+    <string name="SpecialStations">SpecialStations.ini</string>
+
+</resources>

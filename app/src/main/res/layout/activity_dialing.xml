@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background_dial_holo_dark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="@dimen/common_dimen_30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/ic_call_dialing"
+            android:layout_width="90dip"
+            android:layout_height="90dip">
+
+            <ImageView
+                android:id="@+id/imgTopTxD"
+                android:src="@drawable/ic_person_white_120dp"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+            <ImageView
+                android:id="@+id/imgTopTxS"
+                android:visibility="gone"
+                android:padding="@dimen/common_dimen_10dp"
+                android:src="@drawable/ic_group_white_24dp"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+            <ImageView
+                android:id="@+id/imgTopTxMkf"
+                android:visibility="gone"
+                android:padding="@dimen/common_dimen_13dp"
+                android:src="@drawable/maikefeng"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+            <ImageView
+                android:id="@+id/imgTopTxZy"
+                android:visibility="gone"
+                android:padding="@dimen/common_dimen_18dp"
+                android:src="@drawable/zhanyong"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+            <ImageView
+                android:id="@+id/imgTopTxKx"
+                android:visibility="gone"
+                android:padding="@dimen/common_dimen_10dp"
+                android:src="@drawable/kongxian"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+            <ImageView
+                android:id="@+id/imgTopTxSb"
+                android:visibility="gone"
+                android:padding="@dimen/common_dimen_10dp"
+                android:src="@drawable/shibai"
+                android:layout_width="85dip"
+                android:layout_height="85dip" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPhoneNum"
+            android:layout_marginTop="@dimen/common_dimen_10dp"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="@dimen/text_size_26sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_marginTop="@dimen/common_dimen_10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_18sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llCenterView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llJingYin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_call_voice"
+                    android:layout_width="35dip"
+                    android:layout_height="55dip" />
+
+                <TextView
+                    android:text="静音"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_Bhp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/fab_ic_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="拨号键盘"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:typeface="sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_MT"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgMt"
+                    android:src="@drawable/ic_volume_up_24dp"
+                    android:layout_width="35dip"
+                    android:layout_height="55dip" />
+
+                <TextView
+                    android:text="免提"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/common_dimen_25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_Add"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_call_note_white_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="添加通话"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_Keep"
+                android:paddingLeft="@dimen/common_dimen_15dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_pause_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="保持"
+                    android:textSize="@dimen/text_size_12sp"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:layout_gravity="center_vertical"
+                android:gravity="center|bottom"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/fab_ic_dial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text="免提"
+                    android:textSize="@dimen/text_size_10sp"
+                    android:layout_marginTop="@dimen/common_dimen_10dp"
+                    android:textColor="@color/white"
+                    android:typeface="sans"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="@dimen/common_dimen_40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/llClose"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/ic_call_calling"
+            android:layout_width="65dip"
+            android:layout_height="65dip">
+
+            <ImageView
+                android:src="@drawable/fab_ic_call"
+                android:layout_width="65dip"
+                android:layout_height="65dip" />
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llOpen"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:background="@drawable/fab_green"
+            android:layout_width="65dip"
+            android:layout_height="65dip">
+
+            <ImageView
+                android:src="@drawable/fab_ic_call"
+                android:layout_width="65dip"
+                android:layout_height="65dip" />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

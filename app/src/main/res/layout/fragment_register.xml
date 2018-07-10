@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_Ccgnhzc"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_call_detail_edit"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:text="车次功能号注册"
+                android:layout_marginLeft="@dimen/common_dimen_5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Jcgnhzc"
+        android:padding="@dimen/common_dimen_15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_call_detail_edit"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:layout_marginLeft="@dimen/common_dimen_5dp"
+                android:text="机车功能号注册"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Kszc"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_call_detail_edit"
+                android:layout_width="20dip"
+                android:layout_height="20dip" />
+
+            <TextView
+                android:text="快速注册"
+                android:layout_marginLeft="@dimen/common_dimen_5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+</LinearLayout>

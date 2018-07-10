@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_Znzh"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="站内组呼"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_phone_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_Lzzh"
+        android:padding="@dimen/common_dimen_15dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="临站组呼"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_phone_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_jjhj"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="紧急呼叫"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/ic_phone_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_line_style"/>
+
+    <LinearLayout
+        android:id="@+id/ll_llzh"
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:text="临时组呼"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/ic_phone_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

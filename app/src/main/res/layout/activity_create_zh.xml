@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tky.lte.widget.CTitleBar
+        android:id="@+id/cTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_below="@+id/cTitle"
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="名称："
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_Mc"
+                android:text="lszh"
+                android:hint="请输入群组名称"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        style="@style/horizontal_line_style" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="优先级："
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_Yxj"
+                android:text="2"
+                android:inputType="number"
+                android:hint="请输入优先级"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line_style" />
+
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:padding="@dimen/common_dimen_10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="无讲者释放时长："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    style="@style/linear_shape_fillet">
+                    <com.tky.lte.widget.ClearEditText
+                        android:id="@+id/et_wjzsfsj"
+                        android:inputType="number"
+                        android:hint="1~8小时"
+                        android:text="5"
+                        style="@style/common_edit"
+                        android:maxLength="18"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line_style" />
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="编组时长："
+            android:layout_width="80dip"
+            android:layout_height="wrap_content" />
+
+        <!--   -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_tian"
+                android:inputType="number"
+                android:hint="0~365天"
+                android:text="3"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="天"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_xs"
+                android:inputType="number"
+                android:hint="0~24小时"
+                android:text="10"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="小时"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+            <View
+                style="@style/horizontal_line_style" />
+    <Button
+        android:id="@+id/btSubmit"
+        style="@style/submit_ui"
+        android:text="确定" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu_Float"
+        android:layout_below="@+id/cTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        app:menu_colorNormal="#1565C0"
+        app:menu_colorPressed="#1565C0"
+        app:menu_colorRipple="#1565C0"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#ccffffff">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fbTxlAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person_add_24dp"
+            style="@style/MenuButtonsSmall.Green"
+            app:fab_label="从联系人中添加" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fbSdAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            style="@style/MenuButtonsSmall.Green"
+            app:fab_label="手动添加"/>
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

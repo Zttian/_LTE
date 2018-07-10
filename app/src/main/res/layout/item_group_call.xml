@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="@dimen/common_dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/llImg"
+            android:gravity="center"
+            android:background="@drawable/ic_call_dialing"
+            android:layout_width="45dip"
+            android:layout_height="45dip">
+
+            <ImageView
+                android:src="@drawable/ic_group_white_24dp"
+                android:layout_width="25dip"
+                android:layout_height="25dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/common_dimen_15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/llImg"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvGroupName"
+                android:textColor="@color/main_tab_text_normal"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/common_dimen_5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:textColor="@color/main_tab_text_normal"
+                android:textSize="@dimen/text_size_15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvPriority"
+                    android:layout_marginLeft="@dimen/common_dimen_5dp"
+                    android:textColor="@color/main_tab_text_normal"
+                    android:textSize="@dimen/text_size_15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_call_phone"
+            android:layout_width="30dip"
+            android:layout_height="30dip" />
+    </RelativeLayout>
+    <View
+        style="@style/horizontal_line_style" />
+</LinearLayout>

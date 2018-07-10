@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tky.lte.widget.CTitleBar
+        android:id="@+id/cTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:padding="@dimen/common_dimen_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rbOpen"
+            android:padding="@dimen/common_dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启"/>
+        <RadioButton
+            android:id="@+id/rbClose"
+            android:checked="true"
+            android:padding="@dimen/common_dimen_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭"/>
+
+    </RadioGroup>
+</LinearLayout>

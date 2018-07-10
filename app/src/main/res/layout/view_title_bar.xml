@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="@dimen/common_dimen_40dp"
+                android:id="@+id/bg_layout">
+
+
+    <LinearLayout
+        android:id="@+id/backLayout"
+        android:layout_width="@dimen/common_dimen_60dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/title_bar_diver">
+
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/common_dimen_15dp"
+            android:background="@null"
+            android:scaleType="center"
+            android:clickable="false"
+            android:src="@mipmap/back_left"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/title_bar_diver"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_16sp"
+        tools:text="标题"/>
+
+    <ImageButton
+        android:id="@+id/right_btn"
+        android:layout_width="23dip"
+        android:layout_height="23dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/common_dimen_15dp"
+        android:background="@color/transparent"
+        android:onClick="onClick"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:textSize="@dimen/text_size_16sp"/>
+
+    <TextView
+        android:id="@+id/right_tv"
+        android:layout_width="@dimen/common_dimen_60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0.6dip"
+        android:layout_marginRight="@dimen/common_dimen_5dp"
+        android:background="@color/transparent"
+        android:textColor="@color/white"
+        android:scaleType="center"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16sp"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/title_bar_diver"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

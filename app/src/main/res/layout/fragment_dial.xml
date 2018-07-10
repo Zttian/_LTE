@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#31000000">
+
+
+    <LinearLayout
+        android:id="@+id/popup_anima"
+        android:paddingBottom="@dimen/common_dimen_20dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="@dimen/common_dimen_10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:freezesText="true"
+                android:cursorVisible="false"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textSize="34sp"
+                android:scrollHorizontally="true"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/deleteBut"
+                android:background="@drawable/btn_dialpad_key"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_call_delete_bg" />
+        </LinearLayout>
+        <View
+            style="@style/horizontal_line_style" />
+
+    <include layout="@layout/include_dial"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

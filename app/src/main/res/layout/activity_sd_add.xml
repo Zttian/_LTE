@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/common_gray_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tky.lte.widget.CTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:padding="@dimen/common_dimen_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            style="@style/linear_shape_fillet">
+            <com.tky.lte.widget.ClearEditText
+                android:id="@+id/et_Jcm"
+                android:inputType="number"
+                android:hint="请输入号码"
+                style="@style/common_edit"
+                android:maxLength="18"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btAdd"
+            style="@style/submit_ui_sou"
+            android:text="添加" />
+    </LinearLayout>
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/swipeRecycler"
+            android:layout_marginTop="@dimen/common_dimen_10dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_marginBottom="@dimen/common_dimen_20dp"
+        style="@style/submit_ui"
+        android:text="完成" />
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
